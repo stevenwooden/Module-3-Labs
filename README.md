@@ -22,3 +22,4 @@ Answers to JS Fundamentals:
     console.log("/t /n" - 2) //NaN    
 
 2.
+    The incorrect answers are the addition variable and the lessThan2 variable. The addition variable is incorrect because it is concatenating the values instead of adding them together. The lessThan2 variable is incorrect because it shows the true for the value instead of false when 30 is greater than 4. I fixed both variables by using parseInt function to parse the string value to an intger value. This changes the strings to integers.
