@@ -29,10 +29,29 @@ Answers to JS Fundamentals:
     These console.log messages printed because they had a true implicit conversion because they have values. The ones that are null are 0 for thier if condition have a false implicit conversion which will not print message.
 4.
     let a = 2, b = 3;
-    let a = 5, b = 8;
-    let a = 9, b = 4;
+    //let a = 5, b = 8;
+    //let a = 9, b = 4;
 
     let result = `${a} + ${b} is ${a + b <10 ? 'less than 10' : 'greater than 10'}`;
     console.log(result)
+
+    The += adds numeric values or concatenates strings.
+
+5. 
+    Function Expression Syntax:
+
+    const getGreeting = function(name) {
+    return 'Hello' + " " + name + '!'
+    }
+
+    Arrow Function Syntax:
+
+    const getGreeting = (name) => {return 'Hello' + " " + name + '!'}
+
+6.
+    
+
+
+
 
     
