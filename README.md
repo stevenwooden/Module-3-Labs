@@ -49,6 +49,64 @@ Answers to JS Fundamentals:
     const getGreeting = (name) => {return 'Hello' + " " + name + '!'}
 
 6.
+    const westley = {
+    name: 'Westley',
+    numFingers: 5       
+    }
+    const rugen = {
+        name: 'Count Rugen',
+        numFingers: 6
+    }
+a.
+    const inigo = {
+        firstName: 'Inigo',
+        lastName: 'Montoya',
+        greeting(person) {
+            let greeting = `Hello ${person.name}, my name is ${this.firstName} ${this.lastName}.`;
+            console.log(greeting + getCatchPhrase(person));   
+        }
+    };
+b. & c. const getCatchPhrase = (person) => {
+        if (person.numFingers <= 5) {return 'Nice to meet you';}
+        else if (person.numFingers > 5) {return 'Hello. My name is Inigo Montoya. You killed my father. Prepare to die.';}
+    };
+
+    inigo.greeting(westley)
+    inigo.greeting(rugen)
+7.
+    const basketballGame = {
+    score: 0,
+    foul: 0,
+
+    freeThrow() {
+        this.score++;
+        return this;
+    },
+    basket() {
+        this.score += 2;
+        return this;
+    },
+    threePointer() {
+        this.score += 3;
+        return this;
+    },
+    halfTime() {
+        console.log('Halftime score is '+ this.score + " and "+ this.foul);
+    },
+    c. numFouls() {
+        this.foul +=1 ;
+        return this;
+    },
+    b. fullFinal()  {
+        console.log('Fulltime final score is '+this.score + " and "+ this.foul);
+    }
+}
+
+basketballGame.basket().freeThrow().numFouls().basket().threePointer().numFouls().halfTime();
+basketballGame.threePointer().freeThrow().numFouls().basket().threePointer().fullFinal();
+
+
+8. 
     
 
 
