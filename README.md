@@ -131,6 +131,8 @@ for (let key in city) {
 b. differentAreas(boston);
 
 9.
+I printed the original variables and got different results for each. the teamSports variable printed the added values from the moreSports variables to the array. The cat1 variable printed the replaced name value from the cat 2 variable. These changes were made because both were stored to the same address in memory. The dog1 variable did not have a change in tis value because it is a string and are always copied as a whole value. 
+I changed the moreSports and cat2 variables using the spread synatax to ensure the original remains independent.
 
 
 
