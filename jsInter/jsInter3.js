@@ -3,7 +3,7 @@ animals.unshift('Koala', 'Panda');
 animals.push('Lion', 'Elephant');
 animals.sort();
 function replaceMiddleAnimal(newValue){
-    animals.splice(3, 0, newValue);
+    animals.splice(3, 1, newValue);
     return animals;
 }
 
