@@ -149,8 +149,53 @@ class = canDrive() {
             return this.age >=16;
         }
 
+Answers to Intermediate JS
 
+1.
+function ucFirstLetters(capital){
+    const words = capital.split(" ");// splits the string into seperate words
+    for( let i = 0; i < words.length; i++){
+        words[i] = words[i].charAt(0).toUpperCase() + words[i].substr(1);
+    } // loops the words variable to capitalize each first letter of every word
+    return words.join(" ");// joins the string together
+}
+// Testing with different strings
+console.log(ucFirstLetters("los angeles"))
+console.log(ucFirstLetters("el salvador"))
+console.log(ucFirstLetters("san diego"))
+2.jsinter2.js
+3.
+const animals = ['Tiger', 'Giraffe'];
+b. animals.unshift('Koala', 'Panda');
+a. animals.push('Lion', 'Elephant');
+c. animals.sort();
+d. function replaceMiddleAnimal(newValue){
+    animals.splice(3, 0, newValue);
+    return animals;
+}
 
+e. function findMatchingAnimals(beginsWith){
+    beginsWith = beginsWith.toLowerCase()
+    return animals.filter(animals => animals.toLowerCase().startsWith(beginsWith));
+}
+4.jsInter4.js
 
+5.
+The above code returns the wrong answer because it is concatenating the two variables instead of getting the sum of the values.
+6.
+Inter6.js
+7.
+Inter7.js
+8. Printed combined phone book
+[
+  [ 'Annabelle', '0412312343' ],
+  [ 'Barry', '0433221117' ],
+  [ 'Caroline', '9898989' ],
+  [ 'David', '2626262' ],
+  [ 'Ethan', '3434343' ],
+  [ 'Francis', '5656565' ]
+]
+9. jsInter9.js
 
-    
+10. 
+
