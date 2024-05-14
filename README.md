@@ -204,3 +204,25 @@ Current time is 12:19:04 AM
 1144 seconds have passed so far today
 I am 34 years, 0 month/s and 13 day/s old
 2024-05-01 days and 2024-04-22 days have a difference of 9 days.
+
+Answers to Advanced JS
+
+1. Advan1.js
+
+2. The order it printed was #4,3,2, and then #1. It printed this way because the setTimeout creates a delayed execution to the functions. This allowed #4 to print out first even though it was on the bottom and #1 function prints out last even thoguh it was on top because of the delayed execution by a 100 ms.
+
+3.Advan3.js
+
+4. Advan4.js
+
+5. It uses the old values because the setTimeout function is referenced to the originial object.
+
+6. Advan6.js
+
+7. Advan7.js
+
+8. Advan8.js
+
+9. Advan9.js
+
+10. Advan10.js
